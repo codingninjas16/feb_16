@@ -1,0 +1,8 @@
+//we discuss how to start any project 
+//MVC --> MODEL , VIEW , CONTROLLER
+//START THE SERVER 
+// framework --> express 
+lib v/s framework
+
+ lsof -i:8000
+kill pid
