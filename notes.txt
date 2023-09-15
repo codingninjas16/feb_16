@@ -6,3 +6,9 @@ lib v/s framework
 
  lsof -i:8000
 kill pid
+//model 
+//connection
+//schema 
+//model 
+//query
+//create, read,update,delete
