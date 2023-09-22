@@ -25,6 +25,10 @@ const UserSchema = new mongoose.Schema({
     },
     subject:{
         type:[String]
+    },
+    class:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'class'
     }
 },{
     timestamps:true
