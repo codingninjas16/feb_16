@@ -12,3 +12,23 @@ kill pid
 //model 
 //query
 //create, read,update,delete
+
+
+//api 
+//create 
+//delete
+//update
+/read 
+//resoucres --> user 
+//user 
+//model -->
+ // email,name,password ,role : ['A','S']
+
+
+// node js 
+// mvc
+// module 
+//router
+//model
+//queries ,CRUD --> Read 
+//controller

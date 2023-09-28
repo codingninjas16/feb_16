@@ -23,3 +23,25 @@ module.exports.replaceString = function replaceString(data,dataToReplace) {
     });
     return data;
   }
+
+
+  // send Succes Reponse 
+  // send Error Reposne
+//error
+// res,404,402, false,"agkag"
+  module.exports.sendMessageAsJSON =  function sendMessageAsJSON(res,statusCode ,success = false,mssg = "",data = null ){
+     var resp = {};
+     if(success){
+        resp['success'] = true;
+     }else{
+        resp['success'] = false;
+     }
+
+     if(mssg){
+        resp['msgg']  = mssg;
+     }
+     if(data){
+        resp['data'] = data;
+     }
+     return res.status(statusCode).json(resp);
+  }

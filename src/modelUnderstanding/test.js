@@ -43,7 +43,7 @@ async function read(){
     try {
         //let data =  await userModel.findById('65048e16ab61640036bf358f');
         //let data = await userModel.find({$or : [{email:'a12@gmail.com'},{name:'vikas1'}]});//return []
-        //let data = await userModel.findOne({email:'a20@gmail.com'}).populate('class');
+        //let data = await userModel.findOne({email:'a20@gmail.com'}).populate('class');// null
         let classData = await classModel.findOne({name:'class1'}).populate('student');
         console.log('classData',classData);
         // let data = await userModel.find({$and: [
