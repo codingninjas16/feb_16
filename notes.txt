@@ -32,3 +32,36 @@ kill pid
 //model
 //queries ,CRUD --> Read 
 //controller
+
+
+git log
+ 
+ git checkout project-setup-branch f375886cac3da0ca252ef017ab3992f5bc988b9a
+
+ // middleware
+
+ //get , post ,  --> strict , it is same as route --> exact match 
+ path and ,ethod will be same 
+ // /doctor/
+ // /user/ --> .use ( it will check for slash before after that any path will ok)
+
+ //student 
+ //teacher 
+ --> create 
+ // return not password , _id
+ //admin 
+ // return it all
+
+ // middleware --> middle --> something between server request and server response
+ // it has access to req,res and more parameter is next , when you call next it goes out of the middleware
+ to respective next function
+ //syntax 
+  use app.get ('/path',(req,res,next)) --> work and path should be exact
+  use app.use('/path',(req,res,next)) --> only check resoucre should have /path at first 
+   /path/1
+   /path/2
+   
+ //conclusion
+  // centralize
+  // code repition
+  // generic  

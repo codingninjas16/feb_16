@@ -47,6 +47,11 @@ module.exports.createUser = async function createUser(req,res){
             name:name,
             role:role
         });
+        if(!req.isAdmin){
+            console.log('i am inside not admin');
+            user.password = null;
+            user._id = null;
+        }
     
         return sendMessageAsJSON(res,200,true,"",user);
     

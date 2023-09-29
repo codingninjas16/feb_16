@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const rolesArray = ['A','S','T'];
-const DefaultRoleValue = "T";
+const DefaultRoleValue = "S";
 const UserSchema = new mongoose.Schema({
     email:{
       type:String,
